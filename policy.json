@@ -1,0 +1,13 @@
+{
+    "ric_id": ric_id,
+    "policy_id": policy_id
+    "service_id": service_id,
+    "policy_data": {
+        "field": field,
+        "value": value,
+        "threshold": THROUGHPUT_THRESHOLD if field == "DRB.UEThpDl" else PRB_THRESHOLD,
+        "action": action
+        },
+        "policytype_id": policytype_counter
+   }
+
