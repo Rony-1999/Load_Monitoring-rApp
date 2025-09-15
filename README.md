@@ -8,7 +8,14 @@ a1 policy server/
 ├── template/view.html              # HTML template to render policies             
 └── requirements.txt                # Python dependencies
 
+(Using Docker)
+#run rApp container
+docker compose -f docker-compose.yaml up -d
 
+#stop container
+docker compose -f docker-compose.yaml down -v
+
+(Want to run baremetal)
 #Create a Python Virtual Environment (Optional but Recommended)
  
 python3 -m venv venv
