@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  load_monitoring:
+    build: .
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=production
+      # add any other ENV vars your config.py expects
+    volumes:
+      - .:/app      # optional, for development hot-reload
+    # If using an external database (e.g. InfluxDB), you can define here
+
